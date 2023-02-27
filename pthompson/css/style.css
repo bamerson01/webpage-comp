@@ -1,0 +1,340 @@
+/* Color Palette https://color.adobe.com/color-theme_tart-raspberry-color-theme-21215712/ */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alex Brush');
+
+body {
+	background-color: #FEF0CD;
+	margin: 0px;
+}
+header {
+	display:block;
+	width:100%;
+	min-height:215px;
+	background-color:#8C0327;
+	color: #FED18D;
+}
+
+header a {
+	color: #FED18D;
+	font-family: Raleway;
+	text-decoration: none;
+	font-size: 24px;
+	margin: 10px;
+}
+
+footer {
+	display:block;
+	width:100%;
+	background-color:#8C0327;
+	color: #FED18D;
+   overflow: auto;
+}
+
+footer .menu a {
+	color: #FED18D;
+	font-family: Raleway;
+	text-decoration: none;
+	font-size: 24px;
+	margin: 10px;
+}
+
+footer .menu a:hover {
+	color: #FEF0CD;
+}
+
+
+footer .menu {
+	float: left;
+	padding: 25px;
+	max-width: 50%;
+	margin: auto;
+}
+
+#footer-wrap {
+	display: block;
+	max-width: 1100px;
+	margin: auto;
+}
+
+h1 {
+	font-family: "Alex Brush", Copperplate, serif;
+	color: #FEF0CD;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 36px;
+	font-family: "Alex Brush", Copperplate, serif;
+	color: #FEF0CD;
+	margin: 0px;
+}
+
+h3, h4, h5, h6 {
+	font-family: Raleway, Tahoma, sans-serif;
+	color: #FEF0CD;
+	font-weight: 400;	
+}
+
+p {
+	font-family: Raleway, Tahoma, sans-serif;
+	color: #FEF0CD;	
+	font-size: 18px;
+}
+
+/*-- header nav --*/
+
+nav {
+  font-family: Raleway;
+  clear: both;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0; 
+}
+
+header nav li {
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+header nav li a:hover {
+  color: #FEF0CD;
+  cursor: pointer;
+}
+
+header nav ul li ul a {
+	color: #8C5423;
+
+}
+header nav ul li ul :hover {
+	color: #471E0C;
+}
+
+
+header nav ul li ul {
+  background:#FEF0CD;
+  visibility: hidden;
+  z-index: 5;
+  opacity: 0;
+  min-width: 215px;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+header nav ul li:hover > ul,
+header nav ul li:focus-within > ul, /* this is the line we add */
+header nav ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+header nav ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+/*-- End Header Nav --*/
+
+button {
+	background-color: #8C0327;
+	font-family: Raleway, Tahoma, sans-serif;
+	color: #FEF0CD;	
+	padding: 15px;
+	border-radius: 15px;
+	border-color: #FED18D;
+	display: block;
+	margin-right: 50px;
+	filter: drop-shadow(5px 5px 3px #140803);
+}
+
+#homepage-content {
+	padding: 5px 0px;
+	min-height: 500px;
+	background-color: #FED18D;
+}
+#header-wrap {
+	display: block;
+	max-width: 1100px;
+	margin: auto;
+	position: relative;
+}
+
+.logo {
+	width: 150px;
+	display: block;
+	margin: auto;
+}
+
+.social {
+	position: absolute;
+	right: 25px;
+	top: 25px;
+	max-width: 40%;
+}
+
+.social a {
+	margin: 0px;
+}
+
+.social img {
+	width: 40px;
+}
+
+#categories {
+   background-color: #471E0C;
+}
+
+#categories h1 {
+ color: #471E0C;
+ font-size: 72px;
+ text-align: center;
+ margin: 50px 0px;
+
+}
+
+.introduction {
+	display: block;
+	max-width: 900px;
+	margin: auto;
+   padding: 50px; 
+   clear: both;
+   text-align: center;
+   overflow: auto;
+}
+.introduction button {
+	margin: auto;
+}
+.introduction p {	
+	font-size: 20px;
+}
+
+.intro-border-top {
+	margin-top: 10px;
+	height: 5px;
+	width: 100%;
+  background-color: #FED18D;
+}
+.content-border-top {
+	height: 10px;
+	width: 100%;
+  background-color: #471E0C;
+}
+.background {
+   background-image: 
+   radial-gradient(rgba(254, 240, 205, 0.5), rgba(254, 240, 205, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bakeryDisplay.jpg);
+   background-size: cover;
+   overflow: hidden;
+  } 
+
+.product-category {
+	display: block;
+	max-width: 1100px;
+	margin: auto;
+   background-color: #471E0C;
+   padding: 0px 25px; 
+   clear: both;
+   overflow: auto;
+}
+
+hr {
+	border-color: #8C5423;
+	max-width: 50%;
+	margin: auto;
+	margin-bottom: 50px;
+}
+.wrap 
+{
+ 	margin-bottom:  50px;
+ 	float: left;
+ 	display: inline-block;
+ 	min-width: 30%;
+}
+
+.category-image {
+	max-width:500px; 
+	display:block; 
+	float:right; 
+	margin-bottom:50px;
+	filter: drop-shadow(5px 5px 3px #140803);
+	margin-right: 5px;
+	margin-left: 25px;
+	border-radius: 3px;
+
+}
+
+.category-image-left {
+	max-width:500px; 
+	display:block; 
+	float:left; 
+	margin-right: 25px;
+	margin-bottom:50px;
+	filter: drop-shadow(5px 5px 3px #140803);
+	border-radius: 3px;
+}
+
+@media (max-width: 750px) {
+#categories	h1 {
+		font-size: 58px;
+	}
+	.product-category {
+		padding-bottom: 25px;
+}
+  .category-image {
+  	float: none;
+  	margin: auto;
+  	width: 100%;
+  }
+  .category-image-left {
+  	float: none;
+  	margin: auto;
+  	width: 100%;
+}
+.product-category h2 {
+	display: block;
+	clear: both;
+	margin-top: 50px;
+}
+header {
+	min-height: 270px;
+}
+footer .menu {
+	float: none;
+	max-width: 100%;
+	margin: auto;
+
+}
+.social {
+	right: 0px;
+ 	position: relative;
+	float: none;
+	display: block;
+	max-width: 220px;
+	margin: auto;
+}
+footer .menu a {
+	line-height: 50px;	
+}
+}
+
+@media (max-width: 725px) {
+header {
+	min-height: 330px;
+}
+}
+
+@media (max-width: 308px) {
+header {
+	min-height: 465px;
+}
+}

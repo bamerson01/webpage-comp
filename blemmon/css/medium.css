@@ -1,0 +1,41 @@
+/* Media Query for medium+ views */
+@media only screen and (min-width: 35rem) {
+
+  .mainPadding {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+
+
+
+.proposition button{
+  max-width: 25%;
+}
+
+
+
+
+.treatSection{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.gridContain {
+  display: block;
+}
+
+.followUsImgs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 100px 50px 100px;
+  
+}
+
+}

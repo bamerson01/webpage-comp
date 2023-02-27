@@ -1,0 +1,206 @@
+/* /* Color Theme Swatches in Hex */
+.PHAT-Rolls-1-hex { color: #5793FA; }
+.PHAT-Rolls-2-hex { color: #4EA9DE; }
+.PHAT-Rolls-3-hex { color: #62E6F5; }
+.PHAT-Rolls-4-hex { color: #4EDEC3; }
+.PHAT-Rolls-5-hex { color: #57FAAE; }
+
+/* Color Theme Swatches in RGBA */
+.PHAT-Rolls-1-rgba { color: rgba(87, 147, 250, 1); }
+.PHAT-Rolls-2-rgba { color: rgba(78, 169, 222, 1); }
+.PHAT-Rolls-3-rgba { color: rgba(98, 230, 245, 1); }
+.PHAT-Rolls-4-rgba { color: rgba(78, 222, 195, 1); }
+.PHAT-Rolls-5-rgba { color: rgba(87, 250, 174, 1); }
+
+/* Color Theme Swatches in HSLA */
+.PHAT-Rolls-1-hsla { color: hsla(217, 94, 66, 1); }
+.PHAT-Rolls-2-hsla { color: hsla(202, 68, 58, 1); }
+.PHAT-Rolls-3-hsla { color: hsla(186, 88, 67, 1); }
+.PHAT-Rolls-4-hsla { color: hsla(168, 68, 58, 1); }
+.PHAT-Rolls-5-hsla { color: hsla(152, 94, 66, 1); }
+
+body{
+    background-image: linear-gradient(white,#57FAAE);
+    padding:15px;
+    font-size:18px;
+    font-family: 'Ubuntu', sans-serif;
+    max-width:900px;
+    align-content: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h1{
+    font-family: 'Courier New';
+    text-align:center;
+}
+h3{
+    text-align:center;
+    border-bottom:2px solid #5793FA;
+    border-radius:10px;
+}
+/* header and nav CSS */
+.grid-container-header{
+    display:grid;
+    gap:10px;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 'logo title nav nav nav';
+    border-bottom:2px solid #5793FA;
+    background-color:#4EA9DE;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+header h2{
+    grid-area:title;
+    font-family: 'Courier New';
+    align-self: center;
+
+
+}
+.logo{
+    grid-area:logo;
+    width:10vw;
+    justify-content:center;
+    align-self: center;
+
+}
+
+nav{
+    grid-area:nav;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color:#62E6F5;
+    border-radius: 6px;
+    margin:.5vw;
+    border:none;
+    font-family: 'Courier New';
+    border-bottom:2px solid #5793FA;
+    font-weight:bold;
+    font-size:15px;
+    width:100px;
+    justify-content: center;
+}
+button:hover{
+    background-color:#5793FA;
+}
+
+
+/* grid assignment */
+.intro{
+    grid-area:intro;
+}
+.content{
+    grid-area:content;
+}
+.aside{
+    grid-area:aside;
+}
+.footer{
+    grid-area:footer;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#4EA9DE;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top:2px solid #5793FA;
+
+}
+
+/* Grid CSS */
+
+
+.grid-container{
+    background-color: white;
+    display:grid;
+    gap:10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "intro intro intro"
+    "aside content content"
+    "aside content content"
+    "aside content content"
+    "aside content content"
+    "footer footer footer";
+}
+.grid-container > div{
+    padding:18px;
+
+}
+
+
+/* product CSS */
+.product{
+    display:flex;
+    border:2px solid #5793FA;
+    flex-direction:column;
+    align-items: center;
+    box-shadow: 5px 5px 5px grey;
+}
+.product figcaption{
+    font-weight:bold;
+    text-align:center;
+}
+
+.product img{
+    max-width: 10vw;
+    border:1px solid black;
+}
+
+.product p{
+    padding:3px;
+    font-size:12px;
+}
+
+
+/* Phone Layout */
+@media screen and (max-width: 768px) {
+    .grid-container-header{
+        grid-template-areas: 'logo'
+        'title'
+        'nav'
+        'nav'
+        'nav';
+    }
+    .logo{
+        width:25vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        flex-direction:column;
+    }
+    nav button{
+        width:75%;
+        margin-bottom:10px;
+    }
+    .grid-container{
+        grid-template-areas: 
+    "intro intro intro"
+    "content content content"
+    "content content content"
+    "content content content"
+    "aside aside aside"
+    "footer footer footer";
+    }
+    .product img{
+        max-width: 25vw;
+    }
+    .store{
+        flex-direction:column;
+        align-items: center;
+    }
+
+
+}
+
+
+
